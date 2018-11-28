@@ -1,4 +1,0 @@
-code: "apiErrorPersonUpdateFailed"
-detail: "Could not add person due to backend error [BSSApiErrorException{errors=[Error{status='403', title='Business logic execution has returned an error.', detail='Error on Create Party action/entity [CREATE/PARTY]. Please check supplementary errors.'}, Error{status='403', title='null', detail='Unexpected response received from downstream system. Details: "{"status":400,"code":"CPMCDAL.invalidSpecificationCombination","message":"Personalization is mandatory with value regulator mustBePersonalized for characteristic specification with id 27A55592D5214A2682A0F9BE9634973E.","details":"Personalization is mandatory with value regulator mustBePersonalized for characteristic specification with id 27A55592D5214A2682A0F9BE9634973E."}".'}]}]"
-status: "500"
-title: "Person update failed"
