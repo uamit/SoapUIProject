@@ -1,0 +1,9 @@
+git remote -v
+git rm -r --cached "Folder name" 
+git commit -m "Folder removed from Repo"
+git push -u origin master
+
+git fetch https://github.com/uamit/SoapUIProject.git master:tmp
+git rebase tmp
+git push https://github.com/uamit/SoapUIProject.git HEAD:master
+git branch -D tmp
