@@ -1,0 +1,4757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d953cd7c-9b10-4def-b7ee-d09607fc39a3" activeEnvironment="Default" name="Charging System" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="179a3359-6a79-43e5-afa0-ca0d261fdce9" wadlVersion="http://wadl.dev.java.net/2009/02" name="PMS BCIP" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>PMS Business Configuration and Information Protocol</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>${#Project#sdp_url}</con:endpoint><con:endpoint>http://10.64.107.43:8466</con:endpoint><con:endpoint>http://dl380x1559-1-3-vip:8466</con:endpoint><con:endpoint>http://r610x2135-20:8466</con:endpoint></con:endpoints><con:resource name="BusinessConfiguration" path="/BusinessConfiguration" id="d65de10b-9772-4819-8123-25946ba25d24"><con:settings/><con:parameters/><con:resource name="OfferDefinitions" path="OfferDefinitions" id="d511dc4b-a291-408c-a567-eb29c96e0889"><con:settings/><con:parameters><con:parameter><con:name>offerID</con:name><con:style>TEMPLATE</con:style></con:parameter></con:parameters><con:resource name="{OfferID}" path="{offerID}" id="5e4aa214-d359-46d0-8b16-a67d187a2285"><con:settings/><con:parameters><con:parameter required="false" disableUrlEncoding="false"><con:name>offerID</con:name><con:value>540</con:value><con:style>TEMPLATE</con:style><con:default>540</con:default></con:parameter></con:parameters><con:method name="GET" id="23206cf4-42b8-4d2c-a764-012ecd0e8c2a" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/xml; charset=UTF-8</con:mediaType><con:status>400 404</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>OfferDefinitions</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="ed1dae8a-8761-4c02-9877-21c8fea5a243" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#sdp_url}</con:endpoint><con:request/><con:originalUri>http://10.64.107.43/BusinessConfiguration/OfferDefinitions/11007</con:originalUri><con:credentials><con:username>sdpuser</con:username><con:password>sdpuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="offerID" value="1010000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>OfferID</con:entry></con:parameterOrder></con:request></con:method><con:method name="Create" id="e0d6b5b3-7fd8-4cdd-a623-ca31dd69b855" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/xml; charset=UTF-8</con:mediaType><con:status>400 403 401</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>text/xml</con:mediaType><con:params/><con:element>OfferDefinitions</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="9ae44097-3d08-44a1-aa3a-cde39a2f6a02" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#sdp_url}</con:endpoint><con:request><![CDATA[<OfferDefinitions>
+   <OfferDefinition Description="Base for offer OnDemand Voice Flat" MajorPriority="80" MinorPriority="80" ProductCapability="0" ProductOfferingName="OnDemandVoiceFlat" TimeSecondResolutionCapability="0" StartDateUpdateDuringRemovalProtectionPeriodAllowed="0" EnableAtProvisioning="0" EndOfProvisioning="0" BreakChargingIntervalsOnDa="1" OfferValidThroughoutInterrogation="1" FeeCapable="0" ProvisionCapable="0" Depletable="0">
+      <AttributeDefinitions>
+         <AttributeDefinition Name="ADMINExternalProductIdentifier" Type="String" IncludeCCR="true" Value="dummy"/>
+         <AttributeDefinition Name="CFSSID" Type="String" IncludeCCR="true" Value="dummy"/>
+         <AttributeDefinition Name="POID" Type="String" IncludeCCR="true" Value="dummy"/>
+         <AttributeDefinition Name="ServiceType" Type="Integer" Value="1"/>
+      </AttributeDefinitions>
+      <OfferResourceConnection ResourceFacingService="common.home.voice" IncludeMainAccount="0" DedicatedAccountSelectionRule="0">
+         <OfferConnectedDedicatedAccountList>
+            <OfferConnectedDedicatedAccount DedicatedAccountId="11101" DedicatedAccountPriority="10"/>
+            <OfferConnectedDedicatedAccount DedicatedAccountId="11100" DedicatedAccountPriority="30"/>
+            <OfferConnectedDedicatedAccount DedicatedAccountId="11103" DedicatedAccountPriority="20"/>
+         </OfferConnectedDedicatedAccountList>
+      </OfferResourceConnection>
+      <TemplateTrees>
+         <TemplateTree RatingPlan="OnDemand_Voice_Flat" ServiceProvider="RatingTemplate">
+            <TreeParameter Name="VoiceRural" >
+               <DecimalValue>1.0</DecimalValue>
+            </TreeParameter>
+            <TreeParameter Name="VoiceOnNet" >
+               <DecimalValue>3.0</DecimalValue>
+            </TreeParameter>
+            <TreeParameter Name="VoiceOffNet" >
+               <DecimalValue>3.0</DecimalValue>
+            </TreeParameter>
+            <TreeParameter Name="VoiceVoicemail" >
+               <DecimalValue>1.0</DecimalValue>
+            </TreeParameter>
+         </TemplateTree>
+      </TemplateTrees>
+   </OfferDefinition>
+</OfferDefinitions>]]></con:request><con:originalUri>http://10.64.107.43/BusinessConfiguration/OfferDefinitions/11007</con:originalUri><con:credentials><con:username>sdpuser</con:username><con:password>sdpuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="offerID" value="1010000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>OfferID</con:entry></con:parameterOrder></con:request></con:method><con:method name="Delete" id="519e49db-244c-493e-90d9-05625cd145f3" method="DELETE"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/xml; charset=UTF-8</con:mediaType><con:status>400 403</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>text/xml</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" id="b2df7e14-357d-4144-9dc0-bdd7b18624ba" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#sdp_url}</con:endpoint><con:request/><con:originalUri>http://10.64.107.43/BusinessConfiguration/OfferDefinitions/11007</con:originalUri><con:credentials><con:username>sdpuser</con:username><con:password>sdpuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="offerID" value="1010000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>OfferID</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a174f1f2-6053-4eda-8d4d-bba05a44435a" wadlVersion="http://wadl.dev.java.net/2009/02" name="AIR" type="rest" definitionUrl="AIR" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT"/><con:endpoints><con:endpoint>${#Project#air_url}</con:endpoint></con:endpoints><con:resource name="Air" path="/Air" id="d3a7d1e8-3af5-4da0-bb15-a76f6db32c4a"><con:settings/><con:parameters/><con:method name="update service class" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+        <methodName>UpdateServiceClass</methodName>
+        <params>
+                <param>
+                        <value>
+                                <struct>
+                                        <member>
+                                                <name>originHostName</name>
+                                                <value>
+                                                        <string>ITEL</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>originNodeType</name>
+                                                <value>
+                                                        <string>EXT</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>originTransactionID</name>
+                                                <value>
+                                                        <string>12345</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>serviceClassCurrent</name>
+                                                <value>
+                                                        <int>10</int>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>originTimeStamp</name>
+                                                <value>
+                                                        <dateTime.iso8601>20120410T11:15:21-0500</dateTime.iso8601>
+                                                </value>
+                                        </member>
+                                        <member>
+                                               <name>serviceClassNew</name>
+                                                <value>
+                                                        <int>55</int>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>subscriberNumber</name>
+                                                <value>
+                                                        <string>51922125025</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>serviceClassAction</name>
+                                                <value>
+                                                        <string>SetOriginal</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                  <name>negotiatedCapabilities</name>
+                  <value>
+                     <array>
+                        <data>
+                           <value>
+                              <i4>805638660</i4>
+                           </value>
+                           <value>
+                              <i4>680</i4>
+                           </value>
+                        </data>
+                     </array>
+                  </value>
+               </member>
+                                </struct>
+                        </value>
+                </param>
+        </params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Offer" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params><param><value><struct>
+<member><name>originNodeType</name><value><string>AIR</string></value></member>
+<member><name>originHostName</name><value><string>AIR</string></value></member>
+<member><name>originTransactionID</name><value><string>112344</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20190319T18:25:59-0400</dateTime.iso8601></value></member>
+<member><name>subscriberNumberNAI</name><value><int>1</int></value></member>
+<member><name>subscriberNumber</name><value><string>2349062058585</string></value></member>
+<member><name>offerID</name><value><int>11012</int></value></member>
+<member><name>negotiatedCapabilities</name><value><array><data><value><int>805638660</int></value></data></array></value></member>
+<member><name>attributeUpdateInformationList</name>
+	<value><array><data><value><struct>
+	<member><name>attributeName</name><value><string>CFSSID</string></value></member>
+		<member><name>attributeUpdateAction</name><value><string>SET</string></value></member>
+		<member><name>attributeValueString</name><value><string>CFSS_VAS_CONTENIDO</string></value></member>
+</struct></value></data></array></value></member>
+</struct></value></param></params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="UpdateBal_Date_Main_activacion" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateBalanceAndDate</methodName><params><param><value><struct>
+<member><name>originHostName</name><value><string>IVR</string></value></member>
+<member><name>originNodeType</name><value><string>EXT</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20170317T00:06:13-0300</dateTime.iso8601></value></member>
+<member><name>originTransactionID</name><value><string>1136807058750</string></value></member>
+<member><name>serviceFeeExpiryDate</name><value><dateTime.iso8601>20370101T16:06:13-0300</dateTime.iso8601></value></member>
+<member><name>serviceRemovalPeriod</name><value><i4>12</i4></value></member>
+<member><name>subscriberNumber</name><value><string>56988158788</string></value></member>
+<member><name>supervisionExpiryDate</name><value><dateTime.iso8601>20370101T16:06:13-0300</dateTime.iso8601></value></member>
+<member><name>adjustmentAmountRelative</name><value><string>000</string></value></member>
+<member><name>transactionCurrency</name><value><string>CLP</string></value></member>
+</struct></value></param></params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Change Service class" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+        <methodName>UpdateServiceClass</methodName>
+        <params>
+                <param>
+                        <value>
+                                <struct>
+                                        <member>
+                                                <name>originHostName</name>
+                                                <value>
+                                                        <string>ITEL</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>originNodeType</name>
+                                                <value>
+                                                        <string>EXT</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>originTransactionID</name>
+                                                <value>
+                                                        <string>12345</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>serviceClassCurrent</name>
+                                                <value>
+                                                        <int>1000</int>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>originTimeStamp</name>
+                                                <value>
+                                                        <dateTime.iso8601>20120410T11:15:21-0500</dateTime.iso8601>
+                                                </value>
+                                        </member>
+                                        <member>
+                                               <name>serviceClassNew</name>
+                                                <value>
+                                                        <int>1001</int>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>subscriberNumber</name>
+                                                <value>
+                                                        <string>56988158788</string>
+                                                </value>
+                                        </member>
+                                        <member>
+                                                <name>serviceClassAction</name>
+                                                <value>
+                                                        <string>SetOriginal</string>
+                                                </value>
+                                        </member>
+                                </struct>
+                        </value>
+                </param>
+        </params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Delete Offer" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Delete" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716384492</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:38:44+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>64</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>${#TestCase#Offer_ID}</int>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update DA balance" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params><param><value><struct>
+<member><name>originNodeType</name><value><string>Test</string></value></member>
+<member><name>originHostName</name><value><string>Test</string></value></member>
+<member><name>originTransactionID</name><value><string>00000004</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20170222T13:26:33+0300</dateTime.iso8601></value></member>
+<member><name>subscriberNumber</name><value><string>56940165859</string></value></member>
+<member><name>transactionCurrency</name><value><string>CLP</string></value></member>
+<member><name>adjustmentAmountRelative</name><value><string>0</string></value></member>
+<member>	
+<name>dedicatedAccountUpdateInformation</name>
+<value>
+<array>
+<data>
+<value>
+<struct>
+<member>
+<name>dedicatedAccountID</name>
+<value>
+<i4>11100</i4>
+</value>
+</member>
+
+<member>
+<name>dedicatedAccountUnitType</name>
+<value>
+<i4>1</i4>
+</value>
+</member>
+
+<member>
+<name>dedicatedAccountValueNew</name>
+<value>
+<string>1000000</string>
+</value>
+</member>
+ 
+
+</struct>
+</value>
+</data>
+</array>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update UC" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>originNodeType</name>
+<value>
+<string>AIR</string>
+</value>
+</member>
+<member>
+<name>originHostName</name>
+<value>
+<string>AIR</string>
+</value>
+</member>
+<member>
+<name>originTransactionID</name>
+<value>
+<string>000007</string>
+</value>
+</member>
+<member>
+<name>originTimeStamp</name>
+<value>
+<dateTime.iso8601>20160912T18:24:00+0300</dateTime.iso8601>
+</value>
+</member>
+<member>
+<name>subscriberNumber</name>
+<value>
+<string>56988158788</string>
+</value>
+</member>
+<member>
+<name>originOperatorID</name>
+<value>
+<string>AIR</string>
+</value>
+</member>
+<member>
+<name>usageCounterUpdateInformation</name>
+<value>
+<array>
+<data>
+<value>
+<struct>
+<member>
+<name>usageCounterID</name>
+<value>
+<i4>16405</i4>
+</value>
+</member>
+<member>
+<name>usageCounterValueNew</name>
+<value>
+<string>25600</string>
+</value>
+</member>
+<member>
+<name>negotiatedCapabilities</name>
+<value>
+<array>
+<data>
+<value>
+<i4>805638724</i4>
+</value>
+<value>
+<i4>680</i4>
+</value>
+</data>
+</array>
+</value>
+</member>
+</struct>
+</value>
+</data>
+</array>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Offer with TPS" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer with TPS" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+   <methodName>UpdateOffer</methodName>
+   <params>
+      <param>
+         <value>
+            <struct>
+               <member>
+                  <name>originHostName</name>
+                  <value>
+                     <string>AIR</string>
+                  </value>
+               </member>
+               <member>
+                  <name>originNodeType</name>
+                  <value>
+                     <string>AIR</string>
+                  </value>
+               </member>
+               <member>
+                  <name>negotiatedCapabilities</name>
+                  <value>
+                     <array>
+                        <data>
+                           <value>
+                              <i4>809984580</i4>
+                           </value>
+                           <value>
+                              <i4>680</i4>
+                           </value>
+                        </data>
+                     </array>
+                  </value>
+               </member>
+               <member>
+                  <name>subscriberNumberNAI</name>
+                  <value>
+                     <int>1</int>
+                  </value>
+               </member>
+               <member>
+                  <name>originTimeStamp</name>
+                  <value>
+                     <dateTime.iso8601>20170314T00:25:59-0400</dateTime.iso8601>
+                  </value>
+               </member>
+               <member>
+                  <name>originTransactionID</name>
+                  <value>
+                     <string>5</string>
+                  </value>
+               </member>
+               <member>
+                  <name>subscriberNumber</name>
+                  <value>
+                     <string>56988158788</string>
+                  </value>
+               </member>
+               <member>
+                  <name>offerID</name>
+                  <value>
+                     <i4>10013509</i4>
+                  </value>
+               </member>
+               <member>
+                  <name>treeParameterSetUpdateInformationList</name>
+                  <value>
+                     <array>
+                        <data>
+                           <value>
+                              <struct>
+                                 <member>
+                                    <name>serviceProvider</name>
+                                    <value>
+                                       <int>1</int>
+                                    </value>
+                                 </member>
+                                 <member>
+                                    <name>treeParameterUpdateInformation</name>
+                                    <value>
+                                       <array>
+                                          <data>
+                                             <value>
+                                                <struct>
+                                                   <member>
+                                                      <name>treeParameterName</name>
+                                                      <value>
+                                                         <string>LimitAddOnData</string>
+                                                      </value>
+                                                   </member>
+                                                   
+                                                   <member>
+                                                      <name>treeParameterUpdateAction</name>
+                                                      <value>
+                                                         <string>SET</string>
+                                                      </value>
+                                                   </member>
+                                                   <member>
+                                                      <name>treeParameterValueInteger</name>
+                                                      <value>
+                                                         <string>3</string>
+                                                      </value>
+                                                   </member>
+                                                </struct>
+                                             </value>
+                                          </data>
+                                       </array>
+                                    </value>
+                                 </member>
+                              </struct>
+                           </value>
+                        </data>
+                     </array>
+                  </value>
+               </member>
+            </struct>
+         </value>
+      </param>
+   </params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Offer with TPS of Decimal value" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+   <methodName>UpdateOffer</methodName>
+   <params>
+      <param>
+         <value>
+            <struct>
+               <member>
+                  <name>originHostName</name>
+                  <value>
+                     <string>AIR</string>
+                  </value>
+               </member>
+               <member>
+                  <name>originNodeType</name>
+                  <value>
+                     <string>AIR</string>
+                  </value>
+               </member>
+               <member>
+                  <name>negotiatedCapabilities</name>
+                  <value>
+                     <array>
+                        <data>
+                           <value>
+                              <i4>809988676</i4>
+                           </value>
+                           <value>
+                              <i4>680</i4>
+                           </value>
+                        </data>
+                     </array>
+                  </value>
+               </member>
+               <member>
+                  <name>subscriberNumberNAI</name>
+                  <value>
+                     <int>1</int>
+                  </value>
+               </member>
+               <member>
+                  <name>originTimeStamp</name>
+                  <value>
+                     <dateTime.iso8601>20160719T18:25:59-0400</dateTime.iso8601>
+                  </value>
+               </member>
+               <member>
+                  <name>originTransactionID</name>
+                  <value>
+                     <string>6</string>
+                  </value>
+               </member>
+               <member>
+                  <name>subscriberNumber</name>
+                  <value>
+                     <string>56942249038</string>
+                  </value>
+               </member>
+               <member>
+                  <name>offerID</name>
+                  <value>
+                     <i4>16405</i4>
+                  </value>
+               </member>
+               <member>
+                  <name>treeParameterSetUpdateInformationList</name>
+                  <value>
+                     <array>
+                        <data>
+                           <value>
+                              <struct>
+                                 <member>
+                                    <name>serviceProvider</name>
+                                    <value>
+                                       <int>1</int>
+                                    </value>
+                                 </member>
+                                 <member>
+                                    <name>treeParameterUpdateInformation</name>
+                                    <value>
+                                       <array>
+                                          <data>
+                                             <value>
+                                                <struct>
+                                                   <member>
+                                                      <name>treeParameterName</name>
+                                                      <value>
+                                                         <string>LimitAddOnSMSNational</string>
+                                                      </value>
+                                                   </member>
+                                                   <member>
+                                                      <name>treeParameterUpdateAction</name>
+                                                      <value>
+                                                         <string>SET</string>
+                                                      </value>
+                                                   </member>
+                                                   <member>
+                                                      <name>treeParameterValueDecimal</name>
+                                                      <value>
+                                                         <struct>
+                                                            <member>
+                                                               <name>numberOfDecimals</name>
+                                                               <value>
+                                                                  <i4>0</i4>
+                                                               </value>
+                                                            </member>
+                                                            <member>
+                                                               <name>treeParameterValueNumber</name>
+                                                               <value>
+                                                                  <string>5</string>
+                                                               </value>
+                                                            </member>
+                                                         </struct>
+                                                      </value>
+                                                   </member>
+                                                </struct>
+                                             </value>
+                                          </data>
+                                       </array>
+                                    </value>
+                                 </member>
+                              </struct>
+                           </value>
+                        </data>
+                     </array>
+                  </value>
+               </member>
+            </struct>
+         </value>
+      </param>
+   </params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update monetary UC" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017010316290452</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170103T16:29:04-0300</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56942249500</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>CLP</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>15300</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterMonetaryValueNew</name>
+           <value>
+            <string>100000</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Add PAM" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Add" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>AddPeriodicAccountManagementData</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017030819583834</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170308T19:58:38+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>pamInformationList</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>pamServiceID</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+          <member>
+           <name>pamClassID</name>
+           <value>
+            <int>1000</int>
+           </value>
+          </member>
+          <member>
+           <name>scheduleID</name>
+           <value>
+            <int>1000</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update DA Nonmonetary balance" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params><param><value><struct>
+<member><name>originNodeType</name><value><string>Test</string></value></member>
+<member><name>originHostName</name><value><string>Test</string></value></member>
+<member><name>originTransactionID</name><value><string>00000004</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20140402T13:26:33+0300</dateTime.iso8601></value></member>
+<member><name>subscriberNumber</name><value><string>56988158788</string></value></member>
+<member><name>transactionCurrency</name><value><string>CLP</string></value></member>
+<member><name>adjustmentAmountRelative</name><value><string>0</string></value></member>  <member>
+<name>dedicatedAccountUpdateInformation</name>
+<value>
+<array>
+<data>
+<value>
+<struct>
+<member>
+<name>dedicatedAccountID</name>
+<value>
+<i4>16406</i4>
+</value>
+</member>
+<member>
+<name>dedicatedAccountValueNew</name>
+<value>
+<string>0</string>
+</value>
+</member>
+<member>
+<name>dedicatedAccountUnitType</name>
+<value>
+<i4>6</i4>
+</value>
+</member>
+<member>
+<name>expiryDate</name>
+<value>
+<dateTime.iso8601>20170330T11:31:33+0300</dateTime.iso8601>
+</value>
+</member>
+</struct>
+</value>
+</data>
+</array>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Offer without start and expiry date" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params><param><value><struct>
+<member><name>originNodeType</name><value><string>AIR</string></value></member>
+<member><name>originHostName</name><value><string>AIR</string></value></member>
+<member><name>originTransactionID</name><value><string>112344</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20160719T18:25:59-0400</dateTime.iso8601></value></member>
+<member><name>subscriberNumberNAI</name><value><int>1</int></value></member>
+<member><name>subscriberNumber</name><value><string>56988158788</string></value></member>
+<member><name>offerID</name><value><int>17115</int></value></member>
+<member><name>negotiatedCapabilities</name><value><array><data><value><int>805638660</int></value></data></array></value></member>
+<member></member>
+</struct></value></param></params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Voucherless Refill with external data" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="refill" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>Refill</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017021714315094</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170321T14:31:50+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56942249015</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionAmount</name>
+     <value>
+      <string>10000</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>CLP</string>
+     </value>
+    </member>
+    <member>
+	<name>externalData4</name>
+	<value>
+	<string>PO_PLAN_CARLITOS</string>
+	</value>
+	</member>
+	<member>
+	<name>externalData1</name>
+	<value>
+	<string>PROMO</string>
+	</value>
+	</member>
+    <member>
+     <name>refillProfileID</name>
+     <value>
+      <string>2000</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Delete DA" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Delete DA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteDedicatedAccounts</methodName>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>originNodeType</name>
+<value>
+<string>EXT</string>
+</value>
+</member>
+<member>
+<name>originHostName</name>
+<value>
+<string>CSNMT3VM</string>
+</value>
+</member>
+<member>
+<name>originTransactionID</name>
+<value>
+<string>2019031716400541</string>
+</value>
+</member>
+<member>
+<name>originTimeStamp</name>
+<value>
+<dateTime.iso8601>20190317T16:40:05+0100</dateTime.iso8601>
+</value>
+</member>
+<member>
+<name>subscriberNumberNAI</name>
+<value>
+<int>1</int>
+</value>
+</member>
+<member>
+<name>subscriberNumber</name>
+<value>
+<string>${#Project#MSISDN}</string>
+</value>
+</member>
+<member>
+<name>dedicatedAccountIdentifier</name>
+<value>
+<array>
+<data>
+<value>
+<struct>
+<member>
+<name>dedicatedAccountID</name>
+<value>
+<int>${#TestCase#DAID}</int>
+</value>
+</member>
+</struct>
+</value>
+</data>
+</array>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Delete Subscriber" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Delete subscriber" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteSubscriber</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017021718105034</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170217T18:10:50+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>originOperatorID</name>
+     <value>
+      <string>user</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Install Subscriber" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Install" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>InstallSubscriber</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017021718252943</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170217T18:25:29+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>serviceClassNew</name>
+     <value>
+      <int>1000</int>
+     </value>
+    </member>
+    <member>
+     <name>ussdEndOfCallNotificationID</name>
+     <value>
+      <int>0</int>
+     </value>
+    </member>
+   <member><name>serviceOfferings</name><value>
+<array><data><value><struct>
+<member><name>serviceOfferingActiveFlag</name><value><boolean>1</boolean></value></member>
+<member><name>serviceOfferingID</name><value><i4>2</i4></value></member>
+</struct></value></data></array></value></member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Voucherless Refill" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="refill" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>Refill</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017021714315094</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170217T14:31:50+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56942249157</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionAmount</name>
+     <value>
+      <string>200000</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>CLP</string>
+     </value>
+    </member>
+    <member>
+     <name>refillProfileID</name>
+     <value>
+      <string>0001</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update NONmonetary UC" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017021814454846</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170218T14:45:48+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56966463743</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>11200</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Attach Offer with expiry" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>cdv2ppcsapf06</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017022615215562</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170327T15:21:55+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>10405</int>
+     </value>
+    </member>
+    <member>
+     <name>offerType</name>
+     <value>
+      <int>2</int>
+     </value>
+    </member>
+    
+    <member>
+     <name>expiryDateTime</name>
+     <value>
+      <dateTime.iso8601>20170710T23:21:26+0100</dateTime.iso8601>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Refill UCIP" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="refill" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>Refill</methodName>
+<params><param><value><struct>
+<member><name>originHostName</name><value><string>TestClient</string></value></member>
+<member><name>originNodeType</name><value><string>EXT</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20170323T10:59:00-0300</dateTime.iso8601></value></member>
+<member><name>originTransactionID</name><value><string>00000002</string></value></member>
+<member><name>refillProfileID</name><value><string>0002</string></value></member>
+<member><name>subscriberNumber</name><value><string>56988158788</string></value></member>
+<member><name>transactionAmount</name><value><string>300000</string></value></member>
+<member><name>transactionCurrency</name><value><string>CLP</string></value></member>
+<member><name>negotiatedCapabilities</name><value><array><data><value><i4>809984580</i4></value><value><i4>680</i4></value></data></array></value></member> 
+</struct></value></param></params></methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Product Private NONmonetary UC" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201703072022484</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170307T20:22:48+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>CLP</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>16200</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterValueNew</name>
+           <value>
+            <string>680800</string>
+           </value>
+          </member>
+          <member>
+           <name>productID</name>
+           <value>
+            <int>16</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Product Private monetary UC" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017030720243773</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170307T20:24:37+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56979632426</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>CLP</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>11200</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterMonetaryValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+          <member>
+           <name>productID</name>
+           <value>
+            <int>12</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Create Subscriber" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="create" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>InstallSubscriber</methodName>
+<params><param><value><struct>
+<member><name>originNodeType</name><value><string>AIR</string></value></member>
+<member><name>originHostName</name><value><string>AIR</string></value></member>
+<member><name>originTransactionID</name><value><string>12345</string></value></member>
+<member><name>originTimeStamp</name><value><dateTime.iso8601>20170308T00:00:00-0400</dateTime.iso8601></value></member>
+<member><name>subscriberNumber</name><value><string>56976553850</string></value></member>
+<member><name>subscriberNumberNAI</name><value><i4>1</i4></value></member>
+<member><name>serviceClassNew</name><value><i4>1000</i4></value></member>
+</struct></value></param></params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update timer offer with Attribute Date Type" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201703102046279</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T20:46:27+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>1234</int>
+     </value>
+    </member>
+    <member>
+     <name>offerType</name>
+     <value>
+      <int>2</int>
+     </value>
+    </member>
+    <member>
+     <name>startDateTime</name>
+     <value>
+      <dateTime.iso8601>20170310T00:00:00+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>expiryDateTime</name>
+     <value>
+      <dateTime.iso8601>20170310T00:00:00+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>attributeUpdateInformationList</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>attributeName</name>
+           <value>
+            <string>Date</string>
+           </value>
+          </member>
+          <member>
+           <name>attributeUpdateAction</name>
+           <value>
+            <string>SET</string>
+           </value>
+          </member>
+          <member>
+           <name>attributeValueDate</name>
+           <value>
+            <dateTime.iso8601>20170310T12:00:00+0000</dateTime.iso8601>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Account offer with Attribute Date Type" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031020503975</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T20:50:39+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>10002340</int>
+     </value>
+    </member>
+    <member>
+     <name>offerType</name>
+     <value>
+      <int>0</int>
+     </value>
+    </member>
+    <member>
+     <name>startDate</name>
+     <value>
+      <dateTime.iso8601>20170314T12:00:00+0000</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>expiryDate</name>
+     <value>
+      <dateTime.iso8601>20170315T12:00:00+0000</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>attributeUpdateInformationList</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>attributeName</name>
+           <value>
+            <string>ABC</string>
+           </value>
+          </member>
+          <member>
+           <name>attributeUpdateAction</name>
+           <value>
+            <string>SET</string>
+           </value>
+          </member>
+          <member>
+           <name>attributeValueDate</name>
+           <value>
+            <dateTime.iso8601>20170317T12:00:00+0000</dateTime.iso8601>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update temporary block" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateTemporaryBlocked</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201703102053499</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T20:53:49+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>temporaryBlockedFlag</name>
+     <value>
+      <boolean>0</boolean>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="VoucherBased Refill" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="refill" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>Refill</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031020550422</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T20:55:04+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>voucherActivationCode</name>
+     <value>
+      <string>123456789</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Accumulator" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateAccumulators</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201703102057059</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T20:57:05+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>accumulatorUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>accumulatorID</name>
+           <value>
+            <int>16212</int>
+           </value>
+          </member>
+          <member>
+           <name>accumulatorValueAbsolute</name>
+           <value>
+            <int>0</int>
+           </value>
+          </member>
+          
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="RUN PAM" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="run" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[  <methodCall>
+    <methodName>RunPeriodicAccountManagement</methodName>
+    <params>
+      <param>
+        <value>
+          <struct>
+            <member>
+              <name>originNodeType</name>
+              <value>
+                <string>ACS</string>
+              </value>
+            </member>
+            <member>
+              <name>originHostName</name>
+              <value>
+                <string>ACS</string>
+              </value>
+            </member>
+            <member>
+              <name>originTransactionID</name>
+              <value>
+                <string>27</string>
+              </value>
+            </member>
+            <member>
+              <name>originTimeStamp</name>
+              <value>
+                <dateTime.iso8601>20180910T13:55:09+0000</dateTime.iso8601>
+              </value>
+            </member>
+            <member>
+              <name>subscriberNumberNAI</name>
+              <value>
+                <i4>1</i4>
+              </value>
+            </member>
+            <member>
+              <name>subscriberNumber</name>
+              <value>
+                <string>2349062058579</string>
+              </value>
+            </member>
+            <member>
+              <name>originOperatorID</name>
+              <value>
+                <string>ACS</string>
+              </value>
+            </member>
+            <member>
+              <name>pamServiceID</name>
+              <value>
+                <i4>86</i4>
+              </value>
+            </member>
+           <member>
+              <name>pamIndicator</name>
+              <value>
+                <i4>5032	</i4>
+              </value>
+            </member>
+          </struct>
+        </value>
+      </param>
+    </params>
+  </methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Delete PAM" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="delete" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeletePeriodicAccountManagementData</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031021025940</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T21:02:59+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>pamInformationList</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>pamServiceID</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update PAM" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdatePeriodicAccountManagementData</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031021035930</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170310T21:03:59+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>pamUpdateInformationList</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>pamServiceID</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+          <member>
+           <name>pamClassIDOld</name>
+           <value>
+            <int>1000</int>
+           </value>
+          </member>
+          <member>
+           <name>pamClassIDNew</name>
+           <value>
+            <int>1000</int>
+           </value>
+          </member>
+          <member>
+           <name>scheduleIDOld</name>
+           <value>
+            <int>13</int>
+           </value>
+          </member>
+          <member>
+           <name>scheduleIDNew</name>
+           <value>
+            <int>13</int>
+           </value>
+          </member>
+          <member>
+           <name>pamServicePriorityOld</name>
+           <value>
+            <int>12</int>
+           </value>
+          </member>
+          <member>
+           <name>pamServicePriorityNew</name>
+           <value>
+            <int>14</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="UpdateBal Main account" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031314163015</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170313T14:16:30+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56944472931</string>
+     </value>
+    </member>
+    <member>
+     <name>adjustmentAmountRelative</name>
+     <value>
+      <string>0</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="get accunt details" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="get" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetAccountDetails</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031721342739</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170317T21:34:27+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="get balance &amp; date" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="get" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031721383934</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170421T12:38:39+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>2349062058579</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Communication Id" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="Update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateCommunicationID</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031818042224</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170318T18:04:22+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>msisdnCurrent</name>
+     <value>
+      <string>56999962111</string>
+     </value>
+    </member>
+    <member>
+     <name>msisdnCurrentNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>msisdnNew</name>
+     <value>
+      <string>56999962108</string>
+     </value>
+    </member>
+    <member>
+     <name>msisdnNewNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Offer product DA" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017050400082195</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170504T00:08:21+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56988158788</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>10003835</int>
+     </value>
+    </member>
+    <member>
+     <name>offerType</name>
+     <value>
+      <int>2</int>
+     </value>
+    </member>
+    <member>
+     <name>expiryDateTime</name>
+     <value>
+      <dateTime.iso8601>20170504T19:07:15+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>dedicatedAccountUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>dedicatedAccountID</name>
+           <value>
+            <int>10300</int>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountValueNew</name>
+           <value>
+            <string>100</string>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountUnitType</name>
+           <value>
+            <int>0</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>airuser</con:username><con:password>airuser</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Delete Accumulator" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="deleteUA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteAccumulators</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201903180118526</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190318T01:18:52+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>accumulatorIdentifier</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>accumulatorID</name>
+           <value>
+            <int>${#TestCase#ACCID}</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Account Group Id" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="update" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateSubscriberSegmentation</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017040600260180</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170406T00:26:01+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>56976553850</string>
+     </value>
+    </member>
+    <member>
+     <name>accountGroupID</name>
+     <value>
+      <int>220</int>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="Update Product offer" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateOffer" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017041122374896</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170411T22:37:48+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>9062058585</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>1196</int>
+     </value>
+    </member>
+    <member>
+     <name>offerType</name>
+     <value>
+      <int>2</int>
+     </value>
+    </member>
+    <member>
+     <name>expiryDateTime</name>
+     <value>
+      <dateTime.iso8601>20170420T00:00:00+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>productID</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="getUCUT" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="getUCUT" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716114534</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:11:45+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="resetUCUTMon" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="resetUCUTMonetry" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716420084</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:42:00+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>${#TestCase#MUC}</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterMonetaryValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="resetUCUTNonMon" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="resetUCUTNonMonetry" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716432040</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:43:20+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>${#TestCase#NMUC}</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="DeleteUT" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="deleteUT" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteUsageThresholds</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716485092</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:48:50+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>usageThresholds</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageThresholdID</name>
+           <value>
+            <int>${#TestCase#UT}</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="getUA" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="getUA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetAccumulators</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201903180121278</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190318T01:21:27+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="ResetUCUTMonetry" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="resetUCUTMonetry" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716420084</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:42:00+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>${#TestCase#MUC}</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterMonetaryValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="UpdateDAThreshold" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateDA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>ojesim01</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019042020062525</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190420T20:06:25+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>64</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#TestSuite#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>dedicatedAccountUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>dedicatedAccountID</name>
+           <value>
+            <int>${#TestSuite#DAID}</int>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountValueNew</name>
+           <value>
+            <string>${#TestSuite#ValDAID}</string>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountUnitType</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method><con:method name="UpdateDedicatedAccountID" id="7e4e51df-bbbb-401d-9b6f-119c96316c50" method="POST"><con:settings/><con:parameters/><con:request name="UpdateDA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>ojesim01</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019042916271713</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190429T16:27:17+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>64</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>2349062058586</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>dedicatedAccountUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>dedicatedAccountID</name>
+           <value>
+            <int>192</int>
+           </value>
+          </member>
+          <member>
+           <name>adjustmentAmountRelative</name>
+           <value>
+            <string>10000</string>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountUnitType</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:testSuite id="feeeb2ac-711c-46d5-a5b7-8e99774740d3" name="AIR TestSuite"><con:description>TestSuite generated for REST Service [AIR]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a76b4266-8915-430d-b100-4309bdc1810c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteOffer" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="getAccountDetail" id="b8b86e0e-d844-4993-b3b5-f02291d71903" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="get accunt details" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getAccountDetail" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetAccountDetails</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031721342739</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170317T21:34:27+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="ScriptDeleteOfferDA" id="7d345017-2527-426a-b754-45c4bedfd975"><con:settings/><con:config><script><![CDATA[import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.model.iface.MessageExchange
+import com.eviware.soapui.support.GroovyUtils 
+import groovy.json.JsonSlurper;
+import groovy.json.JsonOutput
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext
+
+//Gettting Offer Details
+def getOfferDetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getAccountBalanceDetails"]
+def contextGetOffer=new WsdlTestRunContext(getOfferDetails)
+getOfferDetails.run(testRunner,contextGetOffer)
+def res= testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getAccountBalanceDetails"].getPropertyValue("Response")
+
+
+//Deleting the offer
+
+def deleteOfferDetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["Delete"]
+def contextDeleteOffer=new WsdlTestRunContext(deleteOfferDetails)
+
+
+//Deleting the Dedicated ID
+def deleteDAIDDetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["DeleteDA"]
+def contextDeleteDAID=new WsdlTestRunContext(deleteDAIDDetails)
+
+
+def arrOffer=[]
+
+arrOffer=res.split('offerID')
+
+
+
+for(i=1;i<arrOffer.size();i++)
+{
+	arr1=arrOffer[i].split('>')
+
+	arr2=arr1[3].split('<')
+//log.info arr2[0]
+
+testRunner.testCase.setPropertyValue( "Offer_ID", arr2[0] )
+
+deleteOfferDetails.run(testRunner,contextDeleteOffer)
+
+log.info "Offer "+ arr2[0] + " Deleted Successfully" 
+
+}
+
+
+
+
+def arrDA=[]
+
+arrDA=res.split('dedicatedAccountID')
+for(i=1;i<arrDA.size();i++)
+{
+	arr1=arrDA[i].split('>')
+
+	arr2=arr1[3].split('<')
+//log.info arr2[0]
+
+testRunner.testCase.setPropertyValue( "DAID", arr2[0] )
+
+deleteDAIDDetails.run(testRunner,contextDeleteDAID)
+
+log.info "Dedicated ID "+ arr2[0] + " Deleted Successfully" 
+
+}
+
+
+
+//Gettting Offer Details
+def getUCUTDetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUCUT"]
+def contexUCUT=new WsdlTestRunContext(getUCUTDetails)
+getUCUTDetails.run(testRunner,contexUCUT)
+def resUCUT= testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUCUT"].getPropertyValue("Response")
+
+//log.info resUCUT
+
+
+//Resetting UC to zero for monetry
+
+def resetUCUT=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["resetUCUTMonetry"]
+def contextResetUCUT=new WsdlTestRunContext(resetUCUT)
+
+
+//Resetting UC value zero
+
+def resetUCUTN=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["resetUCUTNonMonetry"]
+def contextResetUCUTN=new WsdlTestRunContext(resetUCUTN)
+
+
+
+def arrUCUT=[]
+
+arrUCUT=resUCUT.split('usageCounterID')
+for(i=1;i<arrUCUT.size();i++)
+{
+	arr1=arrUCUT[i].split('>')
+
+	arr2=arr1[3].split('<')
+	arr3=arr1[8].split('<')
+
+	log.info arr2[0] + arr3[0]
+
+	if(arr3[0]=='usageCounterMonetaryValue1')
+	{
+
+		log.info "UC "+ arr2[0]+" " + "TYPE "+ arr3[0]
+
+		testRunner.testCase.setPropertyValue( "MUC", arr2[0] )
+		resetUCUT.run(testRunner,contextResetUCUT)
+		log.info "Usage Counter " + arr2[0] + "updated successfully"
+
+		}
+		if(arr3[0]=='usageCounterValue')
+		{
+			testRunner.testCase.setPropertyValue( "NMUC", arr2[0] )
+		
+
+		resetUCUTN.run(testRunner,contextResetUCUTN)
+		log.info "Non Monetry Updated"
+
+			}
+
+
+}
+
+
+//deleting UT
+
+
+def delUT=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["deleteUT"]
+def contextDelUT=new WsdlTestRunContext(delUT)
+
+
+arrUCUT=resUCUT.split('usageThresholdID')
+for(i=1;i<arrUCUT.size();i++)
+{
+
+	arr1=arrUCUT[i].split('>')
+
+	arr2=arr1[3].split('<')
+
+	//log.info arr2[0]
+
+	testRunner.testCase.setPropertyValue( "UT", arr2[0] )
+
+	delUT.run(testRunner,contextDelUT)
+
+	log.info "UT "+arr2[0]+" Deleted Successfully"
+	}
+
+
+
+
+
+// Accumulator
+
+
+def getUAetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUA"]
+def contextUA=new WsdlTestRunContext(getUAetails)
+getUAetails.run(testRunner,contextUA)
+def resUA= testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUA"].getPropertyValue("Response")
+
+
+def delUA=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["deleteUA"]
+def contextDelUA=new WsdlTestRunContext(delUA)
+
+arrUA=resUA.split('accumulatorID')
+for(i=1;i<arrUA.size();i++)
+{
+
+	arr1=arrUA[i].split('>')
+
+	arr2=arr1[3].split('<')
+
+	//log.info arr2[0]
+
+	testRunner.testCase.setPropertyValue( "ACCID", arr2[0] )
+
+	delUA.run(testRunner,contextDelUA)
+
+	log.info "Accumulator " +arr2[0] + " deleted successfully"
+	}
+
+
+
+		]]></script></con:config></con:testStep><con:testStep type="restrequest" name="Delete" id="7bb3c7e0-5e72-410b-ac33-aa9d8bb534ac" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="Delete Offer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteOffer</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716384492</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:38:44+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>64</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>offerID</name>
+     <value>
+      <int>${#TestCase#Offer_ID}</int>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="getAccountBalanceDetails" id="58de823a-1c67-46fe-999b-27a51899bf7e" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="get balance &amp; date" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getAccountBalanceDetails" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CDV1CSNMTXPVV01virtualUATEntelcom</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2017031721383934</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20170421T12:38:39+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>0</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DeleteDA" id="19a4eaf4-c0bc-4753-b295-7bc5fcc2e4ee" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="Delete DA" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteDA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteDedicatedAccounts</methodName>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>originNodeType</name>
+<value>
+<string>EXT</string>
+</value>
+</member>
+<member>
+<name>originHostName</name>
+<value>
+<string>CSNMT3VM</string>
+</value>
+</member>
+<member>
+<name>originTransactionID</name>
+<value>
+<string>2019031716400541</string>
+</value>
+</member>
+<member>
+<name>originTimeStamp</name>
+<value>
+<dateTime.iso8601>20190317T16:40:05+0100</dateTime.iso8601>
+</value>
+</member>
+<member>
+<name>subscriberNumberNAI</name>
+<value>
+<int>1</int>
+</value>
+</member>
+<member>
+<name>subscriberNumber</name>
+<value>
+<string>${#Project#MSISDN}</string>
+</value>
+</member>
+<member>
+<name>dedicatedAccountIdentifier</name>
+<value>
+<array>
+<data>
+<value>
+<struct>
+<member>
+<name>dedicatedAccountID</name>
+<value>
+<int>${#TestCase#DAID}</int>
+</value>
+</member>
+</struct>
+</value>
+</data>
+</array>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="getUCUT" id="5e47c828-ac8e-406c-9d90-cd9925d54c6b" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="getUCUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getUCUT" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716114534</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:11:45+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="5f40c276-7efd-4578-a3d2-c3dc1a2e7795" disabled="true"><con:settings/><con:config><script><![CDATA[import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.model.iface.MessageExchange
+import com.eviware.soapui.support.GroovyUtils 
+import groovy.json.JsonSlurper;
+import groovy.json.JsonOutput
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext
+
+//Gettting Offer Details
+def getUCUTDetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUCUT"]
+def contexUCUT=new WsdlTestRunContext(getUCUTDetails)
+getUCUTDetails.run(testRunner,contexUCUT)
+def resUCUT= testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUCUT"].getPropertyValue("Response")
+
+//log.info resUCUT
+
+
+//Resetting UC to zero for monetry
+
+//def req= testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["Delete"].getPropertyValue("Request")
+//def xmlReq=new XmlHolder(req)
+def resetUCUT=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["resetUCUTMonetry"]
+def contextResetUCUT=new WsdlTestRunContext(resetUCUT)
+
+
+//Resetting UC value zero
+
+def resetUCUTN=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["resetUCUTNonMonetry"]
+def contextResetUCUTN=new WsdlTestRunContext(resetUCUTN)
+
+//Deleting the Dedicated ID
+//def deleteDAIDDetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["DeleteDA"]
+//def contextDeleteDAID=new WsdlTestRunContext(deleteDAIDDetails)
+
+
+
+
+def arrUCUT=[]
+
+arrUCUT=resUCUT.split('usageCounterID')
+for(i=1;i<arrUCUT.size();i++)
+{
+	arr1=arrUCUT[i].split('>')
+
+	arr2=arr1[3].split('<')
+	arr3=arr1[8].split('<')
+
+	//log.info arr2[0] + arr3[0]
+
+	if(arr3[0]=='usageCounterMonetaryValue1')
+	{
+
+		testRunner.testCase.setPropertyValue( "MUC", arr2[0] )
+		
+
+		resetUCUT.run(testRunner,contextResetUCUT)
+		log.info "Monetry Updated"
+
+		}
+
+		
+		if(arr3[0]=='usageCounterValue')
+		{
+			testRunner.testCase.setPropertyValue( "NMUC", arr2[0] )
+		
+
+		resetUCUTN.run(testRunner,contextResetUCUTN)
+		log.info "Non Monetry Updated"
+
+			}
+
+			
+	
+
+
+
+
+//testRunner.testCase.setPropertyValue( "Offer_ID", arr2[0] )
+
+//deleteOfferDetails.run(testRunner,contextDeleteOffer)
+
+//log.info "UCUT "+ arr2[0] + " UCUT Successfully" 
+
+}
+
+
+
+
+//deleting UT
+
+
+
+def delUT=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["deleteUT"]
+def contextDelUT=new WsdlTestRunContext(delUT)
+
+
+arrUCUT=resUCUT.split('usageThresholdID')
+for(i=1;i<arrUCUT.size();i++)
+{
+
+	arr1=arrUCUT[i].split('>')
+
+	arr2=arr1[3].split('<')
+
+	//log.info arr2[0]
+
+	testRunner.testCase.setPropertyValue( "UT", arr2[0] )
+
+	delUT.run(testRunner,contextDelUT)
+	}
+
+
+
+// Accumulator
+
+
+def getUAetails=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUA"]
+def contextUA=new WsdlTestRunContext(getUAetails)
+getUAetails.run(testRunner,contextUA)
+def resUA= testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["getUA"].getPropertyValue("Response")
+
+
+def delUA=testRunner.testCase.testSuite.testCases["DeleteOffer"].testSteps["deleteUA"]
+def contextDelUA=new WsdlTestRunContext(delUA)
+
+arrUA=resUA.split('accumulatorID')
+for(i=1;i<arrUA.size();i++)
+{
+
+	arr1=arrUA[i].split('>')
+
+	arr2=arr1[3].split('<')
+
+	//log.info arr2[0]
+
+	testRunner.testCase.setPropertyValue( "ACCID", arr2[0] )
+
+	delUA.run(testRunner,contextDelUA)
+
+	log.info "Accumulator " +arr2[0] + " deleted successfully"
+	}
+
+
+
+		]]></script></con:config></con:testStep><con:testStep type="restrequest" name="resetUCUTMonetry" id="90dc2ee4-777e-4f9b-ab12-472bfda33372" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="resetUCUTMon" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="resetUCUTMonetry" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716420084</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:42:00+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>${#TestCase#MUC}</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterMonetaryValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="resetUCUTNonMonetry" id="5d2edfcf-f5f7-4007-ae89-26b8e6e86494" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="resetUCUTNonMon" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="resetUCUTNonMonetry" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716432040</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:43:20+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>${#TestCase#NMUC}</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterValueNew</name>
+           <value>
+            <string>0</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="deleteUT" id="ebc61d44-d03c-4c76-889d-47c20f911fd7" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="DeleteUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="deleteUT" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteUsageThresholds</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716485092</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:48:50+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>usageThresholds</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageThresholdID</name>
+           <value>
+            <int>${#TestCase#UT}</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="getUA" id="6c59a3ba-2d4d-4bfd-b3aa-352a74086a33" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="getUA" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getUA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>GetAccumulators</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201903180121278</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190318T01:21:27+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="deleteUA" id="063aab68-6111-4454-b78e-90da8ca5d99f" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="Delete Accumulator" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="deleteUA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>DeleteAccumulators</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>201903180118526</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190318T01:18:52+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#Project#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>accumulatorIdentifier</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>accumulatorID</name>
+           <value>
+            <int>${#TestCase#ACCID}</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>Offer_ID</con:name><con:value>69200</con:value></con:property><con:property><con:name>DAID</con:name><con:value>75</con:value></con:property><con:property><con:name>MUC</con:name><con:value>14009</con:value></con:property><con:property><con:name>NMUC</con:name><con:value>482101</con:value></con:property><con:property><con:name>UT</con:name><con:value>14009</con:value></con:property><con:property><con:name>ACCID</con:name><con:value>87</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>Offer_ID</con:name><con:value/></con:property><con:property><con:name>DAID</con:name><con:value/></con:property><con:property><con:name>MUC</con:name><con:value/></con:property><con:property><con:name>NMUC</con:name><con:value/></con:property><con:property><con:name>UT</con:name><con:value/></con:property><con:property><con:name>ACCID</con:name><con:value/></con:property></con:properties></con:testSuite><con:testSuite id="0e81412a-483f-42f3-af39-2cdd0c7a4954" name="ThresholdUpdate"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f217e314-72a8-49aa-8f56-ada2b1f75a1e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ThresholdChange" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="UpdateDA" id="2e29eeaf-1ae0-4bdc-a0ff-3824c71fbcb2" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="UpdateDAThreshold" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateDA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>ojesim01</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019042020062525</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190420T20:06:25+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>64</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#TestSuite#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>dedicatedAccountUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>dedicatedAccountID</name>
+           <value>
+            <int>${#TestSuite#DAID}</int>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountValueNew</name>
+           <value>
+            <string>${#TestSuite#ValDAID}</string>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountUnitType</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="resetUCUTMonetry" id="bc54aff3-a8c2-4eaa-88a6-eeba6f55cc6e" disabled="true"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="ResetUCUTMonetry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="resetUCUTMonetry" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<methodCall>
+<methodName>UpdateUsageThresholdsAndCounters</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>CSNMT3VM</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019031716420084</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190317T16:42:00+0100</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>${#TestSuite#MSISDN}</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>usageCounterUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>usageCounterID</name>
+           <value>
+            <int>${#TestSuite#MUC}</int>
+           </value>
+          </member>
+          <member>
+           <name>usageCounterMonetaryValueNew</name>
+           <value>
+            <string>${#TestSuite#ValMUC}</string>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="ThresholdUpdateScript" id="07a9991c-4420-4fa2-b61c-004c8c666928"><con:settings/><con:config><script>//Grrovy Script to update DA, UC for threshold notifications
+//@AmitU
+
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.model.iface.MessageExchange
+import com.eviware.soapui.support.GroovyUtils 
+import groovy.json.JsonSlurper;
+import groovy.json.JsonOutput
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext
+
+/* 
+     ****************MANDATORY INFORMATION PART****************
+	1.Please provide input to every variable
+	2.Provide value against DataGB if bunlde is in GB making DataMB "ZERO"
+	3.Provide value against DataMB if bunlde is in MB making DataGB "ZERO"
+*/
+
+MSISDN_toUse=2349062058598
+DAIDtoUpdate=213
+UC=[622,5003]
+Percentage=99.5
+DataGB=0		
+DataMB=500			
+
+//*****************************************************
+
+
+testRunner.testCase.testSuite.setPropertyValue("MSISDN",MSISDN_toUse.toString())
+
+
+//Logic to check if Data in GB
+if(DataGB>0){
+// Converting GB TO Monetry Value
+intDataGB=DataGB.toInteger()
+monGB=intDataGB*1024*1024*0.0005
+log.info "GB_Totoal value "+ monGB
+//Calculating value of UC
+valUC=((monGB*(Percentage/100))*100).toInteger()
+log.info Percentage + "% of GB_UC is "+ valUC
+//Calculatin value of DA
+//valDA=((monGB*((100-Percentage)/100))*100).toInteger()
+//log.info "GB_DA is "+ valDA
+
+//New logic to update
+valDA=(((monGB*100)-valUC)).toInteger()
+log.info "GB_DA is "+ valDA
+
+//Checking TOTAL to avoid any differnce
+total= (valUC+valDA)/100
+log.info "Total value is :" + total
+}
+
+
+
+//Logic if data is in MB
+if(DataMB>0)
+{
+// Converting GB TO Monetry Value
+intDataMB=DataMB.toInteger()
+monMB=DataMB*1024*0.0005
+log.info "MB_Totoal value "+ monMB
+//Calculating value of UC
+valUC=((monMB*(Percentage/100))*100).toInteger()
+log.info Percentage + "% of MB_UC is "+ valUC
+//Calculatin value of DA
+//valDA=((monMB*((100-Percentage)/100))*100).toInteger()
+//log.info "MB_DA is "+ valDA
+
+//New logic to update
+valDA=(((monMB*100)-valUC)).toInteger()
+log.info "MB_DA is "+ valDA
+
+//Checking TOTAL value to avoid any differnces
+total= (valUC+valDA)/100
+log.info "Total value is :" + total
+	
+}
+
+
+//Convering values to String
+DA_STR=DAIDtoUpdate.toString()
+valDA_STR=valDA.toString()
+
+testRunner.testCase.testSuite.setPropertyValue("DAID",DA_STR)
+testRunner.testCase.testSuite.setPropertyValue("ValDAID",valDA_STR)
+
+
+def updateDA=testRunner.testCase.testSuite.testCases["ThresholdChange"].testSteps["UpdateDA"]
+def contextUpdateDA=new WsdlTestRunContext(updateDA)
+updateDA.run(testRunner,contextUpdateDA)
+
+log.info "DA "+ DAIDtoUpdate + " Updated Successfully"
+
+def updateUCUT=testRunner.testCase.testSuite.testCases["ThresholdChange"].testSteps["resetUCUTMonetry"]
+def contextUpdateUCUT=new WsdlTestRunContext(updateUCUT)
+
+for(i=0;i&lt;UC.size();i++)
+{
+
+testRunner.testCase.testSuite.setPropertyValue("MUC",UC[i].toString())
+testRunner.testCase.testSuite.setPropertyValue("ValMUC",valUC.toString())
+
+updateUCUT.run(testRunner,contextUpdateUCUT)
+
+log.info "UC "+ UC[i] + " Updated Successfully"
+	
+}
+
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="faee5fcd-8235-493a-b951-456c29157f4c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AddDAID" searchProperties="true" disabled="true"><con:settings/><con:testStep type="restrequest" name="UpdateDA" id="66a94f5e-4ebb-4b84-ab6e-c1be00005404"><con:settings/><con:config service="AIR" resourcePath="/Air" methodName="UpdateDedicatedAccountID" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateDA" id="d3b6ee4b-802c-4e06-ba31-812ae045c894" mediaType="text/xml" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="User-Agent" value="IVR/5.0/1.0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#air_url}</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>UpdateBalanceAndDate</methodName>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>originNodeType</name>
+     <value>
+      <string>EXT</string>
+     </value>
+    </member>
+    <member>
+     <name>originHostName</name>
+     <value>
+      <string>ojesim01</string>
+     </value>
+    </member>
+    <member>
+     <name>originTransactionID</name>
+     <value>
+      <string>2019042916271713</string>
+     </value>
+    </member>
+    <member>
+     <name>originTimeStamp</name>
+     <value>
+      <dateTime.iso8601>20190429T16:27:17+0200</dateTime.iso8601>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumberNAI</name>
+     <value>
+      <int>1</int>
+     </value>
+    </member>
+    <member>
+     <name>negotiatedCapabilities</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <int>64</int>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+    <member>
+     <name>subscriberNumber</name>
+     <value>
+      <string>2349062058586</string>
+     </value>
+    </member>
+    <member>
+     <name>transactionCurrency</name>
+     <value>
+      <string>NGN</string>
+     </value>
+    </member>
+    <member>
+     <name>dedicatedAccountUpdateInformation</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <struct>
+          <member>
+           <name>dedicatedAccountID</name>
+           <value>
+            <int>${#TestCase#DAID}</int>
+           </value>
+          </member>
+          <member>
+           <name>adjustmentAmountRelative</name>
+           <value>
+            <string>10000</string>
+           </value>
+          </member>
+          <member>
+           <name>dedicatedAccountUnitType</name>
+           <value>
+            <int>1</int>
+           </value>
+          </member>
+         </struct>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodCall>]]></con:request><con:originalUri>http://10.64.107.35/Air/Air</con:originalUri><con:credentials><con:username>fdsuser</con:username><con:password>fdsuser@123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="e42553d8-eae3-460c-86de-6efe53940731"><con:settings/><con:config><script>//Grrovy Script to update DA, UC for threshold notifications
+//@AmitU
+
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.model.iface.MessageExchange
+import com.eviware.soapui.support.GroovyUtils 
+import groovy.json.JsonSlurper;
+import groovy.json.JsonOutput
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext
+
+
+
+//testRunner.testCase.testSuite.setPropertyValue("DAID",DA_STR)
+//testRunner.testCase.testSuite.setPropertyValue("ValDAID",valDA_STR)
+daToUpdate=[109,
+198,
+53,
+137,
+197,
+106,
+52,
+104,
+31,
+23,
+66,
+69,
+71,
+74,
+75,
+124,
+45,
+36,
+138,
+196,
+24,
+245,
+246,
+122,
+123,
+21,
+54,
+25,
+39,
+222,
+16,
+178,
+11,
+191,
+8,
+129,
+155,
+5,
+215,
+140,
+153,
+252,
+4780,
+146,
+218,
+219,
+216,
+217,
+93,
+20,
+10,
+211,
+81,
+89,
+2,
+8052,
+8053,
+90,
+91,
+214,
+9,
+156,
+151,
+8068,
+244,
+13,
+26,
+220,
+221,
+213,
+6,
+176,
+1,
+17,
+12,
+161,
+19,
+96,
+82,
+177,
+170,
+7,
+83,
+84,
+99,
+14,
+250,
+280,
+8062,
+8071,
+35,
+37,
+38,
+8066,
+165,
+166,
+195,
+223,
+128,
+86,
+87,
+18,
+58,
+134,
+59,
+28,
+34,
+15,
+40,
+4,
+32,
+199,
+100,
+183,
+181,
+182,
+159,
+192]
+
+def updateDA=testRunner.testCase.testSuite.testCases["AddDAID"].testSteps["UpdateDA"]
+def contextUpdateDA=new WsdlTestRunContext(updateDA)
+
+for(i=0;i&lt;daToUpdate.size();i++)
+{
+	testRunner.testCase.testSuite.testCases["AddDAID"].setPropertyValue("DAID",daToUpdate[i].toString())
+	updateDA.run(testRunner,contextUpdateDA)
+	log.info("Sucess")
+
+}
+
+</script></con:config></con:testStep><con:properties><con:property><con:name>DAID</con:name><con:value>192</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>MSISDN</con:name><con:value>2349062058598</con:value></con:property><con:property><con:name>DAID</con:name><con:value>213</con:value></con:property><con:property><con:name>ValDAID</con:name><con:value>128</con:value></con:property><con:property><con:name>MUC</con:name><con:value>5003</con:value></con:property><con:property><con:name>ValMUC</con:name><con:value>25472</con:value></con:property></con:properties></con:testSuite><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="COMPLEMENT" username="sdpuser" password="sdpusergui">${#Project#sdp_url}</con:endpoint><con:endpoint mode="COMPLEMENT" username="user" password="user">http://10.64.107.43:8466</con:endpoint><con:endpoint mode="COMPLEMENT" username="user" password="user">http://dl380x1559-1-3-vip:8466</con:endpoint><con:endpoint mode="COMPLEMENT" username="user" password="user">http://r610x2135-20:8466</con:endpoint><con:endpoint mode="COMPLEMENT" username="airuser" password="airuser">${#Project#air_url}</con:endpoint></con:endpointStrategy><con:properties><con:property><con:name>sdp_url</con:name><con:value>http://localhost:8466</con:value></con:property><con:property><con:name>air_url</con:name><con:value>http://10.198.8.43:10011</con:value></con:property><con:property><con:name>MSISDN</con:name><con:value>2349062058579</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
